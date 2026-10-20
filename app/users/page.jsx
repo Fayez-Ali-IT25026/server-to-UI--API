@@ -14,10 +14,11 @@ const users = await res.json();
     users.map(user => ()) 
 } */}
 
-
-{
+<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {
     users.map(user => <UsersCard key = {user._id}  user={user}></UsersCard>) 
 }
+</div>
 
         </div>
     );
