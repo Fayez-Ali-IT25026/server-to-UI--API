@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import UpdateUser from "./UpdateUser";
 
 
 
@@ -154,9 +155,35 @@ const handeleDeleteUser = async (id) =>
       </Link>
 
 
-<Button className="mx-4">
+
+
+
+
+
+
+
+
+
+
+{/* <Button className="mx-4">
         edite
-      </Button>
+      </Button> */}
+
+<UpdateUser user={user}></UpdateUser>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* <Button className="" onClick={handeleDeleteUser}  variant= 'destructive'> */}
       <Button
